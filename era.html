@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energjia e Erës</title>
+    <link rel="shortcut icon" href="Images/logos/favicon2.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/era.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+
+    <div id="top"></div>
+    <nav class="nav">
+        <img src="Images/logos/mainLogoFinal.png" id="topLogo" onclick="scrollToTop()">
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#" onclick="event.preventDefault()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#missionEnd">News</a></li>
+        </ul>
+
+        <!-- Navbar -->
+
+        <ul>
+            <li class="hideOnMobile"><a href="home.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About Us</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="hideOnMobile"><a href="#missionEnd">News</a></li>
+            <li class="menuButton" onclick="showSidebar()"><a href="#" onclick="event.preventDefault()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div id="start">
+        <div id="topTitle">
+            <h1>Energjia e Erës</h1>
+        </div>
+    </div>
+
+    <div id="middleParagraph">
+
+        <div class="middleSections">
+            <h1 id="astroTitle">Energjia e erës me <span id="astro"> ASTRO<span id="yellowEnergy">energy</span></span></h1>
+            <p>Energjia e erës është një nga burimet më të pastra dhe më të qëndrueshme të energjisë së rinovueshme. Në AstroEnergy, ne jemi të përkushtuar të ofrojmë zgjidhje inovative të energjisë së erës që plotësojnë nevojat tuaja për energji, duke përdorur fuqinë e erës për një të ardhme më të gjelbër.</p>
+        </div>
+        <div id="middleImage">
+            <img src="Images/Wind_Energy/wind_farm.jpg">
+        </div>
+
+        <div class="middleSections">
+            <h2 id="middleTitle">Përse energjië e erës?</h2>
+            <h3>Benefite mjedisore <i class="fa-solid fa-seedling" id="leafIcon"></i></h3>
+            <ul>
+                <li>Energjia e pastër: Energjia e erës nuk prodhon emetime të gazrave serrë, duke ndihmuar në luftën kundër ndryshimeve klimatike.</li>
+                <li>Përdorimi i tokës: Fermat e erës mund të bashkëjetojnë me bujqësinë, duke lejuar përdorimin e dyfishtë të tokës.</li>
+            </ul>
+        </div>
+
+        <div class="middleSections">
+            <h3>Avantazhet Ekonomike <i class="fa-solid fa-dollar-sign" id="dollarIcon"></i></h3>
+                <ul>
+                    <li>Kosto të ulëta të operimit: Turbinat e erës kanë kosto të ulëta mirëmbajtjeje dhe ofrojnë një burim të qëndrueshëm energjie për dekada.</li>
+                    <li>Krijimi i vendeve të punës: Ndërtimi dhe mirëmbajtja e fermave të erës krijojnë mundësi të shumta punësimi në komunitetet lokale.</li>
+                </ul>
+        </div>
+
+        <div class="middleSections">
+            <h3>Pavarësia e energjisë <i class="fa-solid fa-bolt" id="energyIcon"></i></h3>
+                <ul>
+                    <li>Burimi i qëndrueshëm i energjisë: Energjia e erës është e pashtershme dhe e qëndrueshme, duke ofruar një burim të besueshëm energjie.</li>
+                    <li>Reduktimi i varësisë nga lëndët fosile: Përfitoni nga energjia e rinovueshme dhe reduktoni varësinë tuaj nga burimet tradicionale të energjisë.</li>
+                </ul>
+        </div>
+    </div>
+
+    <div id="bottomParagraph">
+        <h1 id="bottomTitle">Produktet Tona</h1>
+        <div id="firstProduct" class="products">
+            <img class="productPhotos" src="Images/Wind_Energy/wind_turbine.png">
+            <div class="productText">
+                <h1>Turbinat e Erës</h1>
+                <p>Turbinat me efikasitet të lartë që maksimizojnë prodhimin e energjisë nga era.</p>
+            </div>
+        </div>
+        <div id="secondProduct" class="products">
+            <img class="productPhotos" src="Images/Wind_Energy/wind_generator.png">
+            <div class="productText">
+                <h1>Gjeneratorë Erës</h1>
+                <p>Gjeneratorë të avancuar që konvertojnë energjinë mekanike të turbinave në energji elektrike.</p>
+            </div>
+        </div>
+        <div id="thirdProduct" class="products">
+            <img class="productPhotos" src="Images/Wind_Energy/wind_invertor.png">
+            <div class="productText">
+                <h1>Invertorët e Erës</h1>
+                <p>Shndërroni energjinë e erës në energji elektrike të përdorshme me invertorët tanë më të fundit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="row">
+                <div class="footerCol">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#missionEnd">News</a></li>
+                    </ul>
+                </div>
+                <div class="footerCol">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href ="#bottomParagraph">Products</a></li>
+                        <li><a href ="dielli.html">Energjia Diellore</a></li>
+                        <li><a href ="#top">Energjia e Eres</a></li>
+                        <li><a href ="uji.html">Energjia Ujore</a></li>
+                    </ul>
+                </div>
+                <div class="footerCol">
+                    <h4>Address</h4>
+                    <ul>
+                        <li><a href ="#" onclick="event.preventDefault();">Dominusoft</a></li>
+                        <li><a href ="#" onclick="event.preventDefault();">Rruga Reshit Collaku</a></li>
+                        <li><a href ="#" onclick="event.preventDefault();">dominusoft@gmail.com</a></li>
+                        <li><a href ="#" onclick="event.preventDefault();">+355 00 00 00 000</a></li>
+                    </ul>
+                </div>
+                <div class="footerCol">
+                    <h4>Follow Us</h4>
+                    <div class="socials">
+                        <a href ="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href ="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href ="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href ="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/era.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Astro</title>
+    <link rel="shortcut icon" href="Images/logos/favicon2.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="top"></div>
+    <nav class="nav">
+        <img src="Images/logos/mainLogoFinal.png" id="topLogo">
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#" onclick="event.preventDefault()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#footerStart">Services</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="home.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About Us</a></li>
+            <li class="hideOnMobile"><a href="#map">Map</a></li>
+            <li class="hideOnMobile"><a href="#footerStart">Services</a></li>
+            <li class="menuButton" onclick="showSidebar()"><a href="#" onclick="event.preventDefault()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <!-- Form -->
+
+    <form name="form" id="contactForm" onsubmit="return validateForm(event)">
+        <div id="bgImage"></div>
+        <div id="formContainer">
+            <h1 id="formTitle">Contact Us</h1>
+            <div id="firstRow">
+                <div id="fName">
+                    <input type="text" id="firstName" name="FirstName" placeholder="First Name">
+                    <span id="nameError" class="errorMessage"></span>
+                </div>
+                <div id="lName">
+                    <input type="text" id="lastName" name="LastName" placeholder="Last Name">
+                    <span id="lastNameError" class="errorMessage"></span>
+                </div>
+            </div>
+            <div id="secondRow">
+                <div id="emailAddress">
+                    <input type="email" id="email" name="Mail" placeholder="Email">
+                    <span id="emailError" class="errorMessage"></span>
+                </div>
+                <div id="phoneNumber">
+                    <input type="tel" id="number" name="Phone" pattern="[0-9]{10}" placeholder="Phone Number">
+                    <span id="numberError" class="errorMessage"></span>
+                </div>
+            </div>
+            <div id="thirdRow">
+                <div id="adr">
+                    <input type="text" id="address" name="Address" placeholder="Your Address">
+                    <span id="addressError" class="errorMessageAdr"></span>
+                </div>
+                <div id="sub">
+                    <textarea id="subject" name="text" placeholder="Type Your Message Here"></textarea>
+                    <span id="messageError" class="errorMessageSub"></span>
+                </div>
+            </div>
+            <div id="sendContainer">
+                <input type="submit" value="Send" name="Submit"/>
+            </div>
+        </div>
+    </form>
+
+    <!-- Map -->
+    <div class="googleMaps" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.2976044255283!2d19.814571823005846!3d41.32414152085357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350313540c99c4b%3A0x7398d6f11582ba30!2sDominusoft%20Education!5e0!3m2!1sen!2s!4v1715685323121!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="addressMaps">
+            <ul>
+                <li><a href ="#" onclick="event.preventDefault()">Dominusoft</a></li>
+                <li><a href ="#" onclick="event.preventDefault()">Rruga Reshit Collaku</a></li>
+                <li><a href ="#" onclick="event.preventDefault()">dominusoft@gmail.com</a></li>
+                <li><a href ="#" onclick="event.preventDefault()">+355 00 00 00 000</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+
+    <footer class="footer" id="footerStart">
+        <div class="footerContainer">
+            <div class="row">
+                <div class="footerCol">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#map">Map</a></li>
+                        <li><a href="#addressMaps">Address</a></li>
+                    </ul>
+                </div>
+                <div class="footerCol">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href ="about.html">Misioni Ynë</a></li>
+                        <li><a href ="dielli.html">Energjia Diellore</a></li>
+                        <li><a href ="era.html">Energjia e Eres</a></li>
+                        <li><a href ="uji.html">Energjia Ujore</a></li>
+                    </ul>
+                </div>
+                <div class="footerCol">
+                    <h4>Address</h4>
+                    <ul>
+                        <li><a href ="#" onclick="event.preventDefault()">Dominusoft</a></li>
+                        <li><a href ="#" onclick="event.preventDefault()">Rruga Reshit Collaku</a></li>
+                        <li><a href ="#" onclick="event.preventDefault()">dominusoft@gmail.com</a></li>
+                        <li><a href ="#" onclick="event.preventDefault()">+355 00 00 00 000</a></li>
+                    </ul>
+                </div>
+                <div class="footerCol">
+                    <h4>Follow Us</h4>
+                    <div class="socials">
+                        <a href ="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href ="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href ="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href ="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/contact.js"></script>
+</body>
