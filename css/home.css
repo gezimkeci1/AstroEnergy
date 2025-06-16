@@ -428,6 +428,19 @@ ul{
         display: block;
     }
 
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../Images/Home_Page/backgroundPictureMobile.jpg);
+        background-attachment: fixed;
+        color: #1f1f1f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     /* Category Responsiveness */
 
     #category{
@@ -441,7 +454,7 @@ ul{
     #category i{
         font-size: 350%;
         margin-top: 0;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
     }
     
     #firstCategories, #secondCategories{
@@ -458,7 +471,7 @@ ul{
         height: auto;
         border-radius: 50px;
         padding: 10%;
-        margin: 20% 10% 0% 10%;
+        margin: 10% 10% 0% 10%;
     }
     
     /* Mission Responsiveness */
