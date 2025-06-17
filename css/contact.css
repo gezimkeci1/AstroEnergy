@@ -245,10 +245,16 @@ input[type="submit"]{
     transition: 0.3s ease-in-out;
     cursor: pointer;
     font-weight: bold;
+    color: #1a1a1a;
 }
 
 input[type="submit"]:hover{
-    background-color: #ebbd15;
+    background-color: #e0b410;
+    cursor: pointer;
+}
+
+input[type="submit"]:active{
+    background-color: #c89f0e;
     cursor: pointer;
 }
 
@@ -301,7 +307,7 @@ textarea:focus{
 /* Map */
 
 .googleMaps{
-    margin: 25% 0% 10% 0%;
+    margin: 25% 10% 10% 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;

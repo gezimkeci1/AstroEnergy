@@ -25,13 +25,14 @@ body{
     padding-top: 5%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #textContainer{
     color: #1f1f1f;
     font-weight: 900;
     width: 40%;
-    margin: 5% 5% 0 5%;
+    margin: 5% 1% 0 5%;
 }
 
 #astroName{
@@ -49,7 +50,7 @@ body{
     display: flex;
     justify-content: center;
     width: 40%;
-    margin: 5% 5% 0 5%;
+    margin: 5% 5% 0 1%;
 }
 
 #aboutImg{
@@ -151,14 +152,15 @@ nav.scrolled{
 
 /* Mission */
 
-#mission{
+#mission {
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 9%;
     margin-top: 5%;
     margin-bottom: 5%;
     font-size: 100%;
     line-height: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 #missionTitle{
@@ -168,7 +170,7 @@ nav.scrolled{
 /* Stats */
 
 #statistics{
-    margin: 0% 10% 0% 10%;
+    margin: 0% 9% 0% 9%;
 }
 
 .empty1, .empty2{
@@ -192,7 +194,7 @@ nav.scrolled{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3%;
+    padding: 3% 4%;
     border-radius: 25px;
     width: 75%;
     transition: 0.3s ease;
@@ -204,7 +206,7 @@ nav.scrolled{
     flex-wrap: wrap;
     align-content: flex-end;
     align-items: center;
-    padding: 3%;
+    padding: 3% 4%;
     border-radius: 25px;
     width: 75%;
     transition: 0.3s ease;
