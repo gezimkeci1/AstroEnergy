@@ -217,8 +217,7 @@ i{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10%;
-    font-size: 120%;
-    line-height: 30px;
+    font-size: 16px;
 }
 
 #missionTitle{
@@ -436,11 +435,9 @@ ul{
         background-repeat: no-repeat;
         background-image: url(../Images/Home_Page/backgroundPictureMobile.jpg);
         box-shadow: 0 0 25px rgba(0, 0, 0, 0.262);
-        display: flex
-    ;
+        display: flex;
         align-items: center;
         margin-bottom: 10%;
-    }
     }
 
     /* Category Responsiveness */
@@ -506,32 +503,27 @@ ul{
         margin: 10% 0% -30% 10%;
         width: 75%;
     }
-    
+        
     #newsTitle{
         width: 100%;
         font-size: 160%;
     }
-    
+        
     #astro{
         font-size: 200%;
         align-items: baseline;
     }
-    
-    #yellowEnergy{
+        
+    #yellowenergy{
         font-size: 90%;
     }
-    
+        
     #newsContent {
         margin: 35% 10% 0% 10%;
         width: 80%;
     }
-
-    #newsFirst{
-        display: flex;
-        flex-direction: column;
-    }
     
-    #newsSecond{
+    #newsFirst, #newsSecond{
         display: flex;
         flex-direction: column;
     }
@@ -541,34 +533,30 @@ ul{
         width: 35%;
         height: fit-content;
     }
-    
+        
     .theNews p{
         font-size: 100%;
     }
-    
+        
     .theNews{
         align-items: center;
     }
-    
+        
     .newsHeadline time{
         font-size: 85%;
     }
-    
+
     /* Footer Responsiveness */
 
     .footerCol:not(:last-child){
         width: 100%;
         margin-bottom: 5%;
     }
-
-    .footerCol ul li a {
-        font-size: 14px;
-    }
-
+    
     .row{
         margin-left: 3%;
     }
-
+}
 /* Responsiveness Tablet */
 
 @media screen and (min-width:501px) and (max-width: 800px) {
@@ -652,7 +640,7 @@ ul{
     }
     
     /* News Responsiveness */
-    
+
     #news{
         margin: 10%;
         width: 80%;
@@ -665,11 +653,6 @@ ul{
         margin-top: 0;
         margin-left: 0;
     }
-
-    .newsImg {
-        margin-top: 2%;
-        width: 35%;
-    }
     
     #newsTitle{
         font-size: 190%;
@@ -681,7 +664,7 @@ ul{
         margin-bottom: 5%;
     }
     
-    #yellowEnery{
+    #yellowenery{
         font-size: 100%;
     }
 
@@ -690,7 +673,7 @@ ul{
     }
     
     /* Footer Responsiveness */
-    
+
     .row{
         margin-left: 5%;
     }
